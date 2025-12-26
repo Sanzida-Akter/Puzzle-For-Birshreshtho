@@ -9,12 +9,12 @@ if (isset($_GET['hero']) && $_GET['hero'] != '') {
     $query = "SELECT name, story FROM herostory WHERE name='$selectedHero'";
     $result = mysqli_query($con, $query);
     if ($row = mysqli_fetch_assoc($result)) {
-        $storyHtml = "<div id='heroStory' class='mt-3' style='display:none;'>";
+        $storyHtml = "<div id='heroStory' style='display:none;'>";
         $storyHtml .= "<h2>📜 Story of " . ucfirst($row['name']) . "</h2>";
         $storyHtml .= "<p>" . nl2br($row['story']) . "</p>";
         $storyHtml .= "</div>";
     } else {
-        $storyHtml = "<div id='heroStory' class='mt-3' style='display:none;'><p>Story not found.</p></div>";
+        $storyHtml = "<div id='heroStory' style='display:none;'><p>Story not found.</p></div>";
     }
 }
 ?>
@@ -71,9 +71,6 @@ if (isset($_GET['hero']) && $_GET['hero'] != '') {
             <p id="unlockMsg" class="text-info font-weight-bold mt-3">
                 🔒 Solve the puzzle to unlock the story of the hero
             </p>
-
-            <!-- STORY HTML (hidden by default) -->
-            <?= $storyHtml ?>
         </div>
 
         <!-- PUZZLE -->
@@ -92,6 +89,9 @@ if (isset($_GET['hero']) && $_GET['hero'] != '') {
         </div>
     </div>
 </div>
+
+<!-- STORY HTML (outside container for full width) -->
+<?= $storyHtml ?>
 
 <script>
 $("#puzzle").sortable({
@@ -112,3 +112,4 @@ $("#puzzle").sortable({
 
 </body>
 </html>
+
