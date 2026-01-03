@@ -16,7 +16,7 @@ An interactive PHP + MySQL puzzle-based storytelling kid game that honors the 7 
 - 🔓 Story unlocks automatically on correct puzzle order.
 - 📜 Story fetched securely from MySQL database.
 - 📱 Responsive UI using Bootstrap.
-- ⚡ No AJAX required (pure PHP + jQuery).
+  
 
 # 🛠️ Technologies Used
 
