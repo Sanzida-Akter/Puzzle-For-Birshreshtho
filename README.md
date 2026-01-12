@@ -25,7 +25,7 @@ An interactive PHP + MySQL puzzle-based storytelling kid game that honors the 7 
 - HTML5
 - CSS3
 - Bootstrap 4
-- jQuery
+- JavaScript
 - jQuery UI (Sortable)
 
 ***Backend***
@@ -54,3 +54,13 @@ bir-sreshtho-puzzle/
 ├── ruhul/
 │
 └── README.md
+
+# Output
+
+
+
+https://github.com/user-attachments/assets/2842b1c4-c688-46a9-8a06-c1e1de2e8fc1
+
+
+
+
